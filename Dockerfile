@@ -13,7 +13,8 @@ COPY .env ./
 RUN npm install --production
 
 # Create a logs directory (optional, only if your app uses it)
-RUN mkdir -p /app/logs
+# RUN mkdir -p /app/logs
+RUN mkdir -p logs
 
 USER 10014
 
