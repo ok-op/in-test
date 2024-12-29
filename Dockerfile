@@ -12,12 +12,8 @@ COPY .env ./
 # Install dependencies
 RUN npm install --production
 
-# Create a home directory for the non-root user and set environment variables
-RUN mkdir -p /home/appuser && chown 10500:10500 /home/appuser
-ENV HOME=/home/appuser
+# Create a logs directory (optional, only if your app uses it)
+RUN mkdir -p /app/logs
 
-# Switch to a non-root user
-USER 10500
-
-# Run the application
+# Set default command to run the app
 CMD ["npm", "start"]
