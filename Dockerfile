@@ -8,7 +8,7 @@ COPY index.js ./
 COPY logger.js ./
 COPY .env ./
 
-# Установка зависимостей
+# WOODcraft 
 RUN npm install --production
 
 # Создание директории для логов
