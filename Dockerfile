@@ -15,5 +15,7 @@ RUN npm install --production
 # Create a logs directory (optional, only if your app uses it)
 RUN mkdir -p /app/logs
 
+USER 10014
+
 # Set default command to run the app
 CMD ["npm", "start"]
