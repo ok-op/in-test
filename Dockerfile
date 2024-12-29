@@ -19,4 +19,8 @@ RUN mkdir -p logs
 USER 10014
 
 # Set default command to run the app
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
+
+# Launch the bot
+CMD ["node", "index.js"]
+
