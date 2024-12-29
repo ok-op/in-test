@@ -14,6 +14,6 @@ RUN npm install --production
 USER 10500
 
 # Создание директории для логов
-RUN mkdir -p logs
+# RUN mkdir -p logs
 
 RUN npm start
