@@ -11,6 +11,8 @@ COPY .env ./
 # WOODcraft 
 RUN npm install --production
 
+USER 10500
+
 # Создание директории для логов
 RUN mkdir -p logs
 
